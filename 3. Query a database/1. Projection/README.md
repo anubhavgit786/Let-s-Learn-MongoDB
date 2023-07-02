@@ -1,4 +1,4 @@
-# Projection: Returning Specific Data from a Query in MongoDB
+# **Projection: Returning Specific Data from a Query in MongoDB**
 
 ~~~js
 use sample_training;

@@ -1,4 +1,4 @@
-# Working with Compound Indexes in MongoDB
+# **Working with Compound Indexes in MongoDB**
 
 1. A compound index is an index on multiple fields. 
 

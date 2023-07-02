@@ -1,4 +1,4 @@
-# Counting Documents in a MongoDB Collection
+# **Counting Documents in a MongoDB Collection**
 
 ~~~js
 use sample_training;

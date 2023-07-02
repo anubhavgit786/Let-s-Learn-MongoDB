@@ -1,10 +1,10 @@
-# Sorting and Limiting Query Results in MongoDB
+# **Sorting and Limiting Query Results in MongoDB**
 
 ~~~js
 use sample_training;
 ~~~
 
-## Sorting
+## **Sorting**
 
 Syntax:
 
@@ -45,7 +45,7 @@ Output:
 
 In mongoDB capital letters are sorted first and then small letters are sorted. We can change this behaviour using the options. 
 
-## Limiting
+## **Limiting**
 
 ~~~js
  db.companies.find({ category_code: "music" }, { name: 1, number_of_employees: 1}).sort({ number_of_empnumber_of_employees: -1}).limit(3);

@@ -1,4 +1,4 @@
-# Introduction to MongoDB Aggregation
+# **Introduction to MongoDB Aggregation**
 
 ~~~js
 use sample_training;
@@ -49,7 +49,7 @@ $match : { grades : { $gte : 85 } }
 ~~~js
 db.zips.aggregate([ { $match: {state: "CA" } } ]);
 ~~~
-**Output :**
+Output :
 ~~~js
 [
   {
@@ -238,7 +238,7 @@ db.<collection>.aggregate([
 ~~~js
 db.zips.aggregate([ { $group: { _id: "$city", totalZips: { $count: {} } } } ]);
 ~~~
-**Output :**
+Output :
 ~~~js
 [
   { _id: 'SLATERSVILLE', totalZips: 1 },
@@ -270,7 +270,7 @@ Type "it" for more
 ~~~js
 db.zips.aggregate([ { $match: {state: "CA" } },  { $group: { _id: "$city", totalZips: { $count: {} } } } ]);
 ~~~
-**Output :**
+Output :
 ~~~js
 [
   { _id: 'HURON', totalZips: 1 },
@@ -306,7 +306,7 @@ Type "it" for more
 ~~~js
 db.zips.findOne();
 ~~~
-**Output :**
+Output :
 ~~~js
 {
   _id: ObjectId("5c8eccc1caa187d17ca6ed16"),
@@ -321,7 +321,7 @@ db.zips.findOne();
 ~~~js
 db.zips.aggregate([ { $sort: { pop: -1 } } ]);
 ~~~
-**Output :**
+Output :
 ~~~js
 [
   {
@@ -494,7 +494,7 @@ It limits the number of documents that are passed on to the next aggregation sta
 ~~~js
 db.zips.aggregate([ { $sort: { pop: -1 } }, { $limit: 3 } ]);
 ~~~
-**Output**
+Output
 ~~~js
 [
   {
@@ -570,7 +570,7 @@ $project : { total: { $sum : [ "$quiz", "$homework" ] } }
 ~~~js
 db.zips.aggregate([ { $project: { state: 1, zipcode: "$zip", population: "$pop", _id: 0 } }, { $limit: 3 } ]);
 ~~~
-**Output :**
+Output :
 ~~~
 [
   { state: 'AL', zipcode: '35014', population: 3062 },
@@ -606,7 +606,7 @@ $set : { defaultUsername : { $concat: [ "$first_name", "$last_name" ] } }
 ~~~js
 db.zips.aggregate([ { $set: { pop_2022: { $round: { $multiply: [1.0031, "$pop"] } }}}, {$limit: 3} ]);
 ~~~
-**Output :**
+Output :
 ~~~js
 [
   {
@@ -653,7 +653,7 @@ The count stage receives a string that represents the new fields that's returned
 ~~~js
 db.zips.aggregate([ { $count: "num_of_documents" } ]);
 ~~~
-**Output :**
+Output :
 ~~~
 [ { num_of_documents: 29470 } ]
 ~~~

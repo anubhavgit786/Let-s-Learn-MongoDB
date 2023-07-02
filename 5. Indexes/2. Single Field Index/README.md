@@ -1,4 +1,4 @@
-# Creating a Single Field Index in MongoDB
+# **Creating a Single Field Index in MongoDB**
 
 Single field indexes are indexes on single field. They support queries and sort on single field. 
 
@@ -14,7 +14,7 @@ db.customers.createIndex({
 })
 ~~~
 
-## Create a Unique Single Field Index
+## **Create a Unique Single Field Index**
 
 Add ```{unique:true}``` as a second, optional, parameter in createIndex() to force uniqueness in the index field values. Once the unique index is created, any inserts or updates including duplicated values in the collection for the index field/s will fail.    
 
@@ -27,7 +27,7 @@ db.customers.createIndex({
 })
 ~~~
 
-## View the Indexes used in a Collection
+## **View the Indexes used in a Collection**
 
 Use ```getIndexes()``` to see all the indexes created in a collection.
 
@@ -35,7 +35,7 @@ Use ```getIndexes()``` to see all the indexes created in a collection.
 db.customers.getIndexes()
 ~~~
 
-## Check if an index is being used on a query
+## **Check if an index is being used on a query**
 
 Use explain() in a collection when running a query to see the Execution plan. This plan provides the details of the execution stages (IXSCAN , COLLSCAN, FETCH, SORT, etc.).
 

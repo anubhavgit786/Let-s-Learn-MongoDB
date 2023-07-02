@@ -1,4 +1,4 @@
-# Using MongoDB Indexes in Collections
+# **Using MongoDB Indexes in Collections**
 
 1. Indexes are special data structures that store a small portion of the collections data in an ordered form that is easy to traverse and search efficiently. 
 
@@ -10,13 +10,13 @@
 
 5. Indexes store data in an ordered form based on the index fields and values so ordered that are provided when the index is created. 
 
-## Without Indexes
+## **Without Indexes**
 
 MongoDB has to read every document in a collection by performing a collection scan to check if it matches the query being run. 
 
 Also needs to sort the results in memory if the query requires a sorted output. 
 
-## With Indexes
+## **With Indexes**
 
 MongoDB only fetches the documents identified by the index based on the query and returns the results faster. 
 
@@ -26,7 +26,7 @@ By default, there is only one index created per collection. This default index o
 
 Every query should use an index. This way, you can create additional indexes in your collections to cover your data queries. 
 
-## Note
+## **Note**
 
 Be aware that indexes come with a right performance cost. 
 
@@ -34,7 +34,7 @@ When we insert new documents in the collection or update the index fields in the
 
 We need to make sure that all the indexes we have are being used. Otherwise, we should delete the unnecessary or redundant indexes. 
 
-## Most Common Index Types :
+## **Most Common Index Types :**
 
 1. Single field indexes are indexes on one field only. 
 

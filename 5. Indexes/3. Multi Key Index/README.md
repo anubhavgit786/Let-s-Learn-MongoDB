@@ -1,4 +1,4 @@
-# Creating a Multikey Index in MongoDB
+# **Creating a Multikey Index in MongoDB**
 
 When we define an index on an array field, that index is called a multikey index. 
 
