@@ -1,10 +1,10 @@
-# Querying on Array Elements in MongoDB
+# **Querying on Array Elements in MongoDB**
 
 ~~~js
 use sample_analytics;
 ~~~
 
-## Find Documents with an Array That Contains a Specified Value
+## **Find Documents with an Array That Contains a Specified Value**
 
 ~~~js
 db.accounts.find({ products: "InvestmentFund"});
@@ -169,7 +169,7 @@ Output:
 Type "it" for more
 ~~~
 
-## Find a Document by Using the $elemMatch Operator
+## **Find a Document by Using the $elemMatch Operator**
 
 ~~~js
 db.accounts.find({ products: { $elemMatch: { $eq: "InvestmentStock" } } });

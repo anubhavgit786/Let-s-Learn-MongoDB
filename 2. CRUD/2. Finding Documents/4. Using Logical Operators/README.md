@@ -1,10 +1,10 @@
-# Logical Operators
+# **Logical Operators**
 
 ~~~js
 use sample_training;
 ~~~
 
-## Logical AND
+## **Logical AND**
 
 Syntax:
 
@@ -85,7 +85,7 @@ Output:
 ]
 ~~~
 
-## Logical OR
+## **Logical OR**
 
 Syntax:
 
@@ -295,7 +295,7 @@ Type "it" for more
 ~~~
 
 
-## Combined
+## **Combined**
 
 Syntax:
 

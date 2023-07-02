@@ -1,4 +1,4 @@
-# Inserting Documents in a MongoDB Collection
+# **Inserting Documents in a MongoDB Collection**
 There are two methods that we can use to insert documents into a collection. 
 1. insertOne
 2. insertMany. 

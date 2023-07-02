@@ -1,4 +1,4 @@
-# Finding Documents by Using Comparison Operators
+# **Finding Documents by Using Comparison Operators**
 
 In MongoDB, we work with the following operators: 
 

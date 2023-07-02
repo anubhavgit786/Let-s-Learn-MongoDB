@@ -1,4 +1,4 @@
-# Finding Documents in a MongoDB Collection
+# **Finding Documents in a MongoDB Collection**
 
 ~~~js
 
@@ -221,7 +221,7 @@ Type "it" for more
 ~~~
 
 
-## in Operator
+## **in Operator**
 
 The in operator allows us to select all documents that have a field value equal to any of the values specified in the array. 
 
