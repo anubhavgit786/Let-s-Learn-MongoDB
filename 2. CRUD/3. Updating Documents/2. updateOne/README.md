@@ -42,7 +42,7 @@ db.podcasts.updateOne(
 )
 ~~~
 
-## **```upsert```**
+## **```$upsert```**
 
 If the update filter doesn't match any documents, then no update occurs. In this case, we might want to create a document. This is what the $upsert option allows us to do.
 
