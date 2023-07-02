@@ -171,6 +171,13 @@ Type "it" for more
 
 ## **Find a Document by Using the $elemMatch Operator**
 
+The ```$elemMatch``` operator matches documents that contain an array field with at least one element that matches all the specified query criteria.
+
+~~~js
+{ <field>: { $elemMatch: { <query1>, <query2>, ... } } }
+~~~
+
+
 ~~~js
 db.accounts.find({ products: { $elemMatch: { $eq: "InvestmentStock" } } });
 ~~~
@@ -313,3 +320,24 @@ Output:
 ]
 Type "it" for more
 ~~~
+
+## **```$all```**
+
+The ```$all``` operator selects the documents where the value of a field is an array that contains all the specified elements. To specify an ```$all``` expression, use the following prototype:
+
+~~~js
+{ <field>: { $all: [ <value1> , <value2> ... ] } }
+~~~
+
+## **```$size```**
+
+The ```$size``` operator matches any array with the number of elements specified by the argument.
+
+Syntax:
+
+~~~js
+db.<collection>.find( { field: { $size: <number> } } );
+~~~
+
+```$size``` does not accept ranges of values.
+
