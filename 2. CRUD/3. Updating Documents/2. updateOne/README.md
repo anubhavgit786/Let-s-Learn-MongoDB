@@ -1,4 +1,4 @@
-# Updating MongoDB Documents by Using ```updateOne()```
+# **Updating MongoDB Documents by Using ```updateOne()```**
 
 This method updates a single document. It accepts three arguments i.e. a filter document, an update document, and an options object. 
 
@@ -18,7 +18,7 @@ db.<collection>.replaceOne(
 );
 ~~~
 
-## ```$set``` Operator
+## **```$set``` Operator**
 
 The $set operator does one of two things, it adds new fields and values to a document, or it replaces the value of a field with a specified value. 
 
@@ -31,7 +31,7 @@ db.podcasts.updateOne(
 )
 ~~~
 
-## ```$push``` Operator
+## **```$push``` Operator**
 
 The $push operator does one of two things, it appends a value to an array or if the field is absent, $push adds the array field with the value as its element. 
 
@@ -42,7 +42,7 @@ db.podcasts.updateOne(
 )
 ~~~
 
-## ```upsert```
+## **```upsert```**
 
 If the update filter doesn't match any documents, then no update occurs. In this case, we might want to create a document. This is what the $upsert option allows us to do.
 

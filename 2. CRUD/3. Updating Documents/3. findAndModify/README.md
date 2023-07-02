@@ -1,10 +1,10 @@
-# Updating MongoDB Documents by Using ```findAndModify()```
+# **Updating MongoDB Documents by Using ```findAndModify()```**
 
 It is used to return the document that has just been updated. 
 
 For example, imagine we're creating an app that tracks the number of users who download a podcast. 
 
-```updateOne() + findOne()```
+**```updateOne() + findOne()```**
 
 One way to update and return the number of downloads is to use the updateOne and findOne methods. First, we would use updateOne to increment the downloads field, then we would use findOne to return the document by using the underscore ID. 
 

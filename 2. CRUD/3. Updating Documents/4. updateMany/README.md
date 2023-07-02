@@ -1,4 +1,4 @@
-# Updating MongoDB Documents by Using ```updateMany()```
+# **Updating MongoDB Documents by Using ```updateMany()```**
 
 It accepts three arguments i.e. a filter document, an update document, and an options object. 
 
