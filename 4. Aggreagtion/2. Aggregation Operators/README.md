@@ -121,8 +121,9 @@ db.students.aggregate([
 { $sqrt: <number> }
 ~~~
 
+~~~js
 { $round : [ <number>, <place> ] }
-
+~~~
 
 ## **```$count```**
 
@@ -147,7 +148,8 @@ It does not accept any parameters.
 ~~~
 
 
-
+## Note
+1. ```$add``` and ```$substract``` can be used for dates. 
 
 ## **```$cmp```**
 
