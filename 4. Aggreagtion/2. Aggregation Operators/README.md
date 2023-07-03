@@ -28,7 +28,7 @@ db.ratings.aggregate([
 ])
 ~~~
 
-## **```$add```, ```$multiply```, ```$max``` and ```$min```**
+## **```$add```, ```$multiply```, ```$max```, ```$min``` and ```$avg```**
 
 ~~~js
 { $add: [ <expression1>, <expression2>, ... ] }
@@ -47,14 +47,8 @@ db.ratings.aggregate([
 ~~~
 
 ~~~js
-db.sales.aggregate(
-   [
-     { $project: { item: 1, total: { $add: [ "$price", "$fee" ] } } }
-   ]
-)
+{ $avg: [ <expression1>, <expression2>, ... ] }
 ~~~
-
-## **```$avg```,  **
 
 ### **Use in $group Stage**
 
