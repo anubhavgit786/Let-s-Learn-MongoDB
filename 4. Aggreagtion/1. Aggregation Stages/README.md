@@ -1,5 +1,8 @@
 # **Introduction to MongoDB Aggregation Stages**
 
+
+[Complete Aggregation Pipeline Stages](https://www.mongodb.com/docs/manual/reference/operator/aggregation-pipeline/)
+
 ~~~js
 use sample_training;
 ~~~
@@ -695,6 +698,16 @@ or
 db.small_states.find();
 ~~~
 
+### **$unset**
 
+Removes/excludes fields from documents.
 
+~~~js
+{ $unset: "<field>" }
+~~~
 
+or 
+
+~~~js
+{ $unset: [ "<field1>", "<field2>", ... ] }
+~~~
