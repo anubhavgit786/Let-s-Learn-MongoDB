@@ -2,32 +2,6 @@
 
 [Complete Aggregation Pipeline Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)
 
-## **```$abs```**
-Returns the absolute value of a number.
-
-~~~js
-{ $abs: <number> }
-~~~
-or
-~~~js
-{ $abs: <expr> }
-~~~
-
-~~~js
-{ _id: 1, start: 5, end: 8 }
-{ _id: 2, start: 4, end: 4 }
-{ _id: 3, start: 9, end: 7 }
-{ _id: 4, start: 6, end: 7 }
-~~~
-
-~~~js
-db.ratings.aggregate([
-   {
-     $project: { delta: { $abs: { $subtract: [ "$start", "$end" ] } } }
-   }
-])
-~~~
-
 ## **```$add```, ```$multiply```, ```$max```, ```$min``` and ```$avg```**
 
 ~~~js
@@ -106,8 +80,7 @@ db.students.aggregate([
 { "_id" : 3, "quizAvg" : 4.666666666666667, "labAvg" : 5.5, "examAvg" : 74 }
 ~~~
 
-## **```$ceil```, ```$floor```, ```$round``` and ```$sqrt```**
-
+## **```$ceil```, ```$floor```, ```$round```, ```$abs``` and ```$sqrt```**
 
 ~~~js
 { $ceil: <number> }
@@ -124,6 +97,30 @@ db.students.aggregate([
 ~~~js
 { $round : [ <number>, <place> ] }
 ~~~
+
+~~~js
+{ $abs: <number> }
+~~~
+or
+~~~js
+{ $abs: <expr> }
+~~~
+
+~~~js
+{ _id: 1, start: 5, end: 8 }
+{ _id: 2, start: 4, end: 4 }
+{ _id: 3, start: 9, end: 7 }
+{ _id: 4, start: 6, end: 7 }
+~~~
+
+~~~js
+db.ratings.aggregate([
+   {
+     $project: { delta: { $abs: { $subtract: [ "$start", "$end" ] } } }
+   }
+])
+~~~
+
 
 ## **```$count```**
 
@@ -151,6 +148,3 @@ It does not accept any parameters.
 ## Note
 1. ```$add``` and ```$substract``` can be used for dates. 
 
-## **```$cmp```**
-
-## **```$cond```**
