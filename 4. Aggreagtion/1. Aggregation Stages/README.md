@@ -1,4 +1,4 @@
-# **Introduction to MongoDB Aggregation**
+# **Introduction to MongoDB Aggregation Stages**
 
 ~~~js
 use sample_training;
