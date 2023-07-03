@@ -133,7 +133,7 @@ db.students.aggregate([
 
 It does not accept any parameters.
 
-## **```$divide```,  and ```$substract```**
+## **```$divide```, ```$mod``` and ```$substract```**
 
 ~~~js
 { $divide: [ <expression1>, <expression2> ] }
